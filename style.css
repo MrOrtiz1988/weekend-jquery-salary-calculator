@@ -14,3 +14,51 @@ header h1 {
     font-size: 50px;
     padding: 0px;
 }
+
+.form-section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+#submit {
+    float: right;
+    margin: 10px;
+}
+
+.table-section{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 25px;
+    padding: 5px;
+    height: 40px;
+    text-align: left;
+  }
+
+table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  th {
+    background-color: lightgray;
+    width: 50px;
+  }
+
+  .annual-salary {
+    text-align: right;
+  }
+
+  .total {
+    text-align: right;
+  }
+
+  
+  

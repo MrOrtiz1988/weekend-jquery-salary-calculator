@@ -22,11 +22,12 @@
         <input id="employee-number" type="number" placeholder="ID">
         <input id="employee-title" type="text" placeholder="Title">
         <input id="employee-salary" type="number" placeholder="Annual Salary">
-        <button>Submit</button>
+        <br>
+        <button id="submit">Submit</button>
     </form>
     </section>
 
-    <section>
+    <section class="table-section">
         <h2>Employees</h2>
     <table>
 
@@ -37,7 +38,6 @@
               <th>ID</th>
               <th>Title</th>
               <th>Annual Salary</th>
-              <th></th>
             </tr>
           </thead> 
 
@@ -47,19 +47,32 @@
                 <td>Barber</td>
                 <td>4521</td>
                 <td>Team Lead</td>
-                <td>$80,000</td>
+                <td class="annual-salary">$80,000</td>
+            </tr>
+            <tr>
+                <td>Maurice</td>
+                <td>Moss</td>
+                <td>8724</td>
+                <td>Support Team</td>
+                <td class="annual-salary">$58,000</td>
+            </tr>
+            <tr>
+                <td>Roy</td>
+                <td>Smith</td>
+                <td>9623</td>
+                <td>Quality Assurance</td>
+                <td class="annual-salary">$48,000</td>
             </tr>
           </tbody>
+
           <tfoot>
             <tr>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Total Monthly: $0</td>
+                <td colspan=6>&nbsp;</td>
             </tr>
           </tfoot>
 
     </table>
+    <h2 class="total">Total Monthly: $0</h2>
     </section>
 </body>
 </html>
