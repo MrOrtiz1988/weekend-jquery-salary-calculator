@@ -12,20 +12,6 @@ function onReady(){
     //this handles the delete button on its click and is passed in a function
     $('tbody').on('click', '.delete-btn', deleteEntry);
     
-    //needed to add the same logic as below so that it can work with the initial data
-    //if initial data was not needed i could delete it and it would work just fine
-    let sum = 0;
-    for(let int of $('span#salary-int')){
-        sum += Number(int.innerHTML.replace(/,/g, ""));
-    }
-    let monthlyCost = sum / 12;
-    if(monthlyCost > 20000){
-        $('.total').css('background-color', 'red')
-    }else{
-        $('.total').css('background-color', 'white')
-    }
-
-    $('#total-number').text(Intl.NumberFormat().format(monthlyCost));
     $("tr:even").css("background-color", "#eeeeee");
 }
 
@@ -101,4 +87,5 @@ function deleteEntry(){
     }
 
     $('#total-number').text(Intl.NumberFormat().format(monthlyCost));
+    $("tr:even").css("background-color", "#eeeeee");
 }
