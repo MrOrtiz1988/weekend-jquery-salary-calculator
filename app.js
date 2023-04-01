@@ -2,13 +2,7 @@ console.log('Hello JS!');
 
 $(document).ready(onReady);
 
-function onReady(){
-    console.log('Hello JQuery!');
-    $('#submit').on('click', onSubmit);
-    $('tbody').on('click', '.delete-btn', deleteEntry);
-    $("tr:even").css("background-color", "#eeeeee");
-    
-    let sum = 0;
+let sum = 0;
 
     for(let int of $('span#salary-int')){
         sum += Number(int.innerHTML.replace(/,/g, ""));
@@ -24,6 +18,30 @@ function onReady(){
 
     $('#total-number').text(Intl.NumberFormat().format(monthlyCost));
     
+
+
+function onReady(){
+    console.log('Hello JQuery!');
+    $('#submit').on('click', onSubmit);
+    $('tbody').on('click', '.delete-btn', deleteEntry);
+    
+
+    let sum = 0;
+
+    for(let int of $('span#salary-int')){
+        sum += Number(int.innerHTML.replace(/,/g, ""));
+    }
+
+    let monthlyCost = sum / 12;
+
+    if(monthlyCost > 20000){
+        $('.total').css('background-color', 'red')
+    }else{
+        $('.total').css('background-color', 'white')
+    }
+
+    $('#total-number').text(Intl.NumberFormat().format(monthlyCost));
+    $("tr:even").css("background-color", "#eeeeee");
 }
 
 function onSubmit(event){
@@ -68,6 +86,7 @@ function onSubmit(event){
     }
 
     $('#total-number').text(Intl.NumberFormat().format(monthlyCost));
+    $("tr:even").css("background-color", "#eeeeee");
     
    
 }
