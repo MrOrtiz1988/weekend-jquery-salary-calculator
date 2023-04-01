@@ -2,6 +2,12 @@ body {
     margin: 0px;
 }
 
+main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
 header {
     background-color: gray;
     color: white;
@@ -16,20 +22,26 @@ header h1 {
 }
 
 .form-section {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+    width: 100%;
+}
+
+input {
+  height: 20px;
+  width: 18.5%;
 }
 
 #submit {
     float: right;
     margin: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 100px;
 }
 
 .table-section{
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 100%;
 }
 
 table, th, td {
@@ -43,8 +55,6 @@ table, th, td {
 
 table {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
   th {
@@ -59,6 +69,19 @@ table {
   .total {
     text-align: right;
   }
+
+  .delete-div {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .delete-btn {
+    width: 100%;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+
 
   
   
